@@ -1,0 +1,85 @@
+The interactive parts are all already built for you! You just need to convert them from buttons into using steps.
+
+
+
+
+
+
+
+Yes, it's okay for it to "break" if you make the window shape especially weird.
+
+
+
+
+
+
+
+Start with notes.txt from class, really, it's got a useful template for the responsive stuff in there. After you add that in it's just a game of figuring out what scales to fix and then redrawing what relies on those scales.
+
+
+
+
+
+
+
+
+
+
+
+
+Make sure you're ALWAYS using newHeight and newWidth in your render function, not height and width! This is where 75% of your bugs will come from.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pay attention to your console!
+
+
+
+
+
+
+
+
+Do you have both an xAxis and a yAxis?
+
+
+
+
+
+
+
+
+
+
+
+Those full-ticks are a little problematic. How did you set them to that size in the first place? It's going to be the same thing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+After you've redone your y axis, you can run svg.select('.y-axis .domain').remove() again to make the dark lines disappear, or you can add 
+
+    #chart1 .y-axis .domain { display: none }
+
+to your CSS
+

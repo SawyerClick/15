@@ -1,0 +1,58 @@
+---
+headline: "Homework: Responsive design and small multiples"
+kicker: ""
+---
+
+{{!< bootstrap}}
+
+<div class="row mt-3">
+  <div class="col-12">
+
+    {{> homework-15/chart-01 }}
+
+    <!-- hr is a horizontal line, I'm just using them to break up the page -->
+    
+    <hr class="mt-4 pb-4">
+
+    {{> homework-15/chart-02 }}
+
+    <hr class="mt-4 pb-4">
+
+    {{> homework-15/chart-03 }}
+
+    <hr class="mt-4 pb-4">
+
+    {{> homework-15/chart-04 }}
+
+  </div>
+</div>
+
+<!-- A few custom styles for this particular homework -->
+
+<style>
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  #chart-1 .axis line {
+    stroke: #999;
+    stroke-width: 0.5;
+    stroke-dasharray: 3 2;
+  }
+
+  p small {
+    background: #fff880;
+  }
+
+  .colored-text {
+    padding: 1px 7px;
+    display: inline-block;
+  }
+</style>
+
+<!-- A few extra styles to make things responsive even in Bootstrap -->
+<link rel="stylesheet" href="styles/responsive.css">
+
+<script src="scripts/scrollytelling.js"></script>
